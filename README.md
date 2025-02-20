@@ -19,3 +19,24 @@ Este projeto é um sistema de monitoramento contínuo para trens e infraestrutur
 - **`atualizar_arquivo_existente`**: atualiza um arquivo JSON existente com novos dados de anomalias.
 
 - **`encerrar_sistema`**: finaliza o sistema e salva os dados coletados até o momento.
+
+## 🛠️ Como Usar
+
+1. Clone o repositório e execute o código em um terminal Python.
+2. Ao iniciar o sistema, você verá o menu principal com as opções:
+   
+    ```plaintext
+   ┌────────────────────────────────────────┐
+   │           SISTEMA DE OPERAÇÕES         │
+   ├────────────────────────────────────────┤
+   │              MENU PRINCIPAL            │
+   ├────────────────────────────────────────┤
+   │ [1] Iniciar Monitoramento Contínuo     │
+   │ [2] Exibir Status em Tempo Real        │
+   │ [3] Análise de Dados com IA            │
+   │ [4] Relatório de Anomalias             │
+   │ [5] Registrar Nova Anomalia            │
+   │ [6] Criar Novo Arquivo JSON            │
+   │ [7] Atualizar Arquivo Existente        │
+   │ [8] Encerrar Sistema                   │
+   └────────────────────────────────────────┘
