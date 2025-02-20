@@ -40,3 +40,4 @@ Este projeto é um sistema de monitoramento contínuo para trens e infraestrutur
    │ [7] Atualizar Arquivo Existente        │
    │ [8] Encerrar Sistema                   │
    └────────────────────────────────────────┘
+3. Selecione uma das opções digitando o número correspondente e pressionando Enter.
