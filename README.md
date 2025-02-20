@@ -11,5 +11,11 @@ Este projeto é um sistema de monitoramento contínuo para trens e infraestrutur
 - **`analise_ia`**: executa uma análise preditiva usando IA.
   
 - **`relatorio_anomalias`**: exibe um relatório de anomalias detectadas.
+
+- **`registrar_anomalia`**: permite ao usuário registrar uma nova anomalia com detalhes sobre o trem, descrição e data.
   
-- **`encerrar_sistema`**: finaliza o sistema e salva os dados.
+- **`criar_novo_arquivo_json`**: cria um novo arquivo JSON para armazenar dados de anomalias.
+
+- **`atualizar_arquivo_existente`**: atualiza um arquivo JSON existente com novos dados de anomalias.
+
+- **`encerrar_sistema`**: finaliza o sistema e salva os dados coletados até o momento.
