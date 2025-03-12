@@ -4,6 +4,10 @@ import os
 
 # Funções auxiliares para lidar com JSON
 def carregar_dados_json(arquivo):
+    """
+    Carrega os dados de um arquivo JSON.
+    Se o arquivo não existir, retorna uma lista vazia.
+    """
     if os.path.exists(arquivo):
         with open(arquivo, 'r') as f:
             return json.load(f)
@@ -11,6 +15,9 @@ def carregar_dados_json(arquivo):
 
 
 def salvar_dados_json(arquivo, dados):
+    """
+    Salva os dados em um arquivo JSON, sobrescrevendo o conteúdo atual.
+    """
     with open(arquivo, 'w') as f:
         json.dump(dados, f, indent=4)
 
@@ -22,6 +29,9 @@ anomalias = carregar_dados_json('anomalias.json')
 
 
 def menu():
+    """
+    Exibe o menu principal do sistema para o usuário escolher a opção desejada.
+    """
     print("┌────────────────────────────────────────┐")
     print("│           SISTEMA DE OPERAÇÕES         │")
     print("├────────────────────────────────────────┤")
@@ -39,6 +49,10 @@ def menu():
 
 
 def obter_opcao_usuario():
+    """
+    Solicita ao usuário a escolha de uma opção no menu e retorna a opção selecionada.
+    Caso a entrada seja inválida, solicita novamente.
+    """
     while True:
         try:
             escolha = int(input('Selecione uma opção: '))
@@ -51,6 +65,9 @@ def obter_opcao_usuario():
 
 
 def iniciar_monitoramento(trens, infraestrutura):
+    """
+    Inicia o monitoramento contínuo dos trens e infraestruturas, imprimindo informações relevantes.
+    """
     print("\nIniciando monitoramento contínuo de trens e infraestruturas...")
     print(f"• Trens monitorados: {', '.join(trens)}")
     print(f"• Infraestruturas críticas: {infraestrutura} monitoradas")
@@ -59,6 +76,9 @@ def iniciar_monitoramento(trens, infraestrutura):
 
 
 def exibir_status(trens_operacionais, trens_manutencao):
+    """
+    Exibe o status em tempo real dos sistemas, incluindo trens operacionais e em manutenção.
+    """
     print("\nStatus em Tempo Real de Todos os Sistemas:")
     print(f"• Trens operacionais: {len(trens_operacionais)}")
     print(f"• Trens em manutenção: {len(trens_manutencao)}")
@@ -68,6 +88,9 @@ def exibir_status(trens_operacionais, trens_manutencao):
 
 
 def analise_ia():
+    """
+    Realiza uma análise de dados utilizando inteligência artificial para identificar padrões e prever falhas.
+    """
     print("\nAnálise de Dados com Inteligência Artificial:")
     print("• IA analisando padrões de operação e identificando anomalias...")
     print("• Algoritmo preditivo em execução para prever falhas potenciais...")
@@ -76,6 +99,9 @@ def analise_ia():
 
 
 def relatorio_anomalias(anomalias):
+    """
+    Exibe um relatório com as anomalias registradas no sistema.
+    """
     print("\nRelatório de Anomalias Detectadas:")
     if anomalias:
         for anomalia in anomalias:
@@ -87,6 +113,9 @@ def relatorio_anomalias(anomalias):
 
 
 def encerrar_sistema():
+    """
+    Encerra o sistema, pausando todas as operações de monitoramento e salvando os dados coletados.
+    """
     print("\nEncerrando sistema. Todas as operações de monitoramento serão pausadas.")
     print("Os dados coletados até agora foram salvos para futuras análises.")
     print("Sistema encerrado com sucesso. Até logo!")
@@ -94,6 +123,9 @@ def encerrar_sistema():
 
 
 def registrar_anomalia(trem, descricao, data):
+    """
+    Registra uma nova anomalia e salva no arquivo JSON.
+    """
     # Cria um novo dicionário de anomalia
     anomalia = {"trem": trem, "descricao": descricao, "data": data}
 
@@ -108,6 +140,9 @@ def registrar_anomalia(trem, descricao, data):
 
 
 def criar_novo_arquivo_json(nome_arquivo):
+    """
+    Cria um novo arquivo JSON, se o arquivo ainda não existir.
+    """
     try:
         if os.path.exists(nome_arquivo):
             print(f"O arquivo '{nome_arquivo}' já existe. Não será criado novamente.")
@@ -120,6 +155,9 @@ def criar_novo_arquivo_json(nome_arquivo):
 
 
 def atualizar_arquivo_existente(nome_arquivo):
+    """
+    Atualiza um arquivo JSON existente, adicionando uma nova anomalia.
+    """
     try:
         if not os.path.exists(nome_arquivo):
             print(f"O arquivo '{nome_arquivo}' não existe. Não é possível atualizar.")
