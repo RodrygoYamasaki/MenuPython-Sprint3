@@ -8,8 +8,6 @@ Este projeto é um sistema de monitoramento contínuo para trens e infraestrutur
   
 - **`exibir_status`**: mostra o status em tempo real dos trens operacionais e em manutenção.
   
-- **`analise_ia`**: executa uma análise preditiva usando IA.
-  
 - **`relatorio_anomalias`**: exibe um relatório de anomalias detectadas.
 
 - **`registrar_anomalia`**: permite ao usuário registrar uma nova anomalia com detalhes sobre o trem, descrição e data.
@@ -33,11 +31,10 @@ Este projeto é um sistema de monitoramento contínuo para trens e infraestrutur
    ├────────────────────────────────────────┤
    │ [1] Iniciar Monitoramento Contínuo     │
    │ [2] Exibir Status em Tempo Real        │
-   │ [3] Análise de Dados com IA            │
-   │ [4] Relatório de Anomalias             │
-   │ [5] Registrar Nova Anomalia            │
-   │ [6] Criar Novo Arquivo JSON            │
-   │ [7] Atualizar Arquivo Existente        │
-   │ [8] Encerrar Sistema                   │
+   │ [3] Relatório de Anomalias             │
+   │ [4] Registrar Nova Anomalia            │
+   │ [5] Criar Novo Arquivo JSON            │
+   │ [6] Atualizar Arquivo Existente        │
+   │ [7] Encerrar Sistema                   │
    └────────────────────────────────────────┘
 3. Selecione uma das opções digitando o número correspondente e pressionando Enter.
