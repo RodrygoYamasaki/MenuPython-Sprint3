@@ -39,12 +39,11 @@ def menu():
     print("├────────────────────────────────────────┤")
     print("│ [1] Iniciar Monitoramento Contínuo     │")
     print("│ [2] Exibir Status em Tempo Real        │")
-    print("│ [3] Análise de Dados com IA            │")
-    print("│ [4] Relatório de Anomalias             │")
-    print("│ [5] Registrar Nova Anomalia            │")
-    print("│ [6] Criar Novo Arquivo JSON            │")  # Nova opção
-    print("│ [7] Atualizar Arquivo Existente        │")  # Nova opção
-    print("│ [8] Encerrar Sistema                   │")
+    print("│ [3] Relatório de Anomalias             │")
+    print("│ [4] Registrar Nova Anomalia            │")
+    print("│ [5] Criar Novo Arquivo JSON            │")
+    print("│ [6] Atualizar Arquivo Existente        │")
+    print("│ [7] Encerrar Sistema                   │")
     print("└────────────────────────────────────────┘")
 
 
@@ -85,18 +84,6 @@ def exibir_status(trens_operacionais, trens_manutencao):
     print("• Infraestruturas críticas: 5 monitoradas")
     print("• Última verificação de trilhos: 5 minutos atrás")
     print("Todos os sistemas estão funcionando dentro dos parâmetros normais.\n")
-
-
-def analise_ia():
-    """
-    Realiza uma análise de dados utilizando inteligência artificial para identificar padrões e prever falhas.
-    """
-    print("\nAnálise de Dados com Inteligência Artificial:")
-    print("• IA analisando padrões de operação e identificando anomalias...")
-    print("• Algoritmo preditivo em execução para prever falhas potenciais...")
-    print("• Detecção de padrões incomuns em velocidade e temperatura dos trens...")
-    print("Análise concluída. Nenhuma falha prevista para as próximas 24 horas.\n")
-
 
 def relatorio_anomalias(anomalias):
     """
@@ -194,12 +181,9 @@ while executando:
         # Exibir Status em Tempo Real
         exibir_status(trens_operacionais, trens_manutencao)
     elif escolha == 3:
-        # Análise de IA
-        analise_ia()
-    elif escolha == 4:
         # Relatório de Anomalias
         relatorio_anomalias(anomalias)
-    elif escolha == 5:
+    elif escolha == 4:
         # Registrar Nova Anomalia
         try:
             trem = input("\nDigite o nome do trem com a anomalia: ")
@@ -208,14 +192,14 @@ while executando:
             registrar_anomalia(trem, descricao, data)
         except Exception as e:
             print(f"Erro ao registrar anomalia: {e}")
-    elif escolha == 6:
+    elif escolha == 5:
         # Criar Novo Arquivo JSON
         nome_arquivo = input("Digite o nome do novo arquivo JSON (ex: novo_arquivo.json): ")
         criar_novo_arquivo_json(nome_arquivo)
-    elif escolha == 7:
+    elif escolha == 6:
         # Atualizar Arquivo Existente
         nome_arquivo = input("Digite o nome do arquivo JSON para atualizar (ex: anomalias.json): ")
         atualizar_arquivo_existente(nome_arquivo)
-    elif escolha == 8:
+    elif escolha == 7:
         # Encerrar Sistema
         executando = encerrar_sistema()
