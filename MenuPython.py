@@ -55,10 +55,10 @@ def obter_opcao_usuario():
     while True:
         try:
             escolha = int(input('Selecione uma opção: '))
-            if escolha in range(1, 9):  # Agora temos 8 opções
+            if escolha in range(1, 8):  
                 return escolha
             else:
-                print('Opção inválida. Escolha entre 1 e 8.')
+                print('Opção inválida. Escolha entre 1 e 7.')
         except ValueError:
             print('Entrada inválida. Insira um número.')
 
