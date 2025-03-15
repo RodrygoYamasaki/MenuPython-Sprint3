@@ -153,7 +153,7 @@ def atualizar_arquivo_existente(nome_arquivo):
         dados_atualizados = carregar_dados_json(nome_arquivo)
         print(f"Arquivo '{nome_arquivo}' carregado com sucesso!")
 
-        # Vamos apenas adicionar uma nova anomalia para atualizar o arquivo como exemplo
+        # Capturando os dados da anomalia com input.
         trem = input("\nDigite o nome do trem com a anomalia: ")
         descricao = input("Descrição da anomalia: ")
         data = input("Data da anomalia (DD/MM/AAAA): ")
