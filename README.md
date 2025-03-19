@@ -1,6 +1,6 @@
 # 🚉 Sistema de Operações de Monitoramento de Trens
 
-Este projeto é um sistema de monitoramento contínuo para trens e infraestrutura, desenvolvido em Python. Ele permite iniciar o monitoramento, exibir status em tempo real, realizar análises de dados com IA e gerar relatórios de anomalias detectadas.
+Este projeto é um sistema de monitoramento contínuo para trens e infraestrutura, desenvolvido em Python. Ele permite iniciar o monitoramento, exibir status em tempo real, gerar relatórios de anomalias detectadas, registrar anomalias, criar novo arquivo json e atualizar arquivo existente.
 
 ## 📝 Funcionalidades
 
