@@ -2,7 +2,6 @@ import json
 import os
 
 
-# Funções auxiliares para lidar com JSON
 def carregar_dados_json(arquivo):
     """
     Carrega os dados de um arquivo JSON.
@@ -22,7 +21,7 @@ def salvar_dados_json(arquivo, dados):
         json.dump(dados, f, indent=4)
 
 
-# Dados simulados
+# Dados 
 trens_operacionais = ["Trem 1", "Trem 2", "Trem 3"]
 trens_manutencao = ["Trem 4"]
 anomalias = carregar_dados_json('anomalias.json')
